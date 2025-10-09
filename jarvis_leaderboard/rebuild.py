@@ -907,7 +907,7 @@ def rebuild_pages(
     os.chdir(root_dir + "/..")
     num_data = 0
     for i in glob.glob("jarvis_leaderboard/contributions/*/*.csv.zip"):
-            # if "AtomGen" in i:
+         if "AtomGen" in i:
             bnch_tmp = i.split("/")[-1]
             if bnch_tmp not in exclude_benchs:
                 # for i in glob.glob("jarvis_leaderboard/benchmarks/*/*.csv.zip"):
@@ -970,7 +970,7 @@ def rebuild_pages(
     dat = []
     md_files = []
     for i in glob.glob("jarvis_leaderboard/contributions/*/*.csv.zip"):
-            #if "AtomGen" in i:
+         if "AtomGen" in i:
             bnch_tmp = i.split("/")[-1]
             if bnch_tmp not in exclude_benchs:
                 # for i in glob.glob("jarvis_leaderboard/benchmarks/*/*.csv.zip"):
